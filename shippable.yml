@@ -1,0 +1,12 @@
+language: java
+
+jdk:
+  - openjdk8
+
+after_sucess:
+  - mvn test
+
+notifications:
+  email:
+    recipients:
+    - a.mcbreen1@nuigalway.ie
