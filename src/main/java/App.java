@@ -70,9 +70,32 @@ public class App
         courses.add(c1);
         courses.add(c2);
         
-        //A list of all the students, their assigned modules and the course they are registered for should be printed to the console.
-        System.out.println(students+"\n");
-        System.out.println(modules+"\n");
-        System.out.println(courses+"\n");
+        //A list of all the students, their assigned modules and the course they are registered for should be printed to the console
+
+        //StudentData
+        String studentString = "";
+        for(StudentData s: students) {
+            String temp = s.getName() + "\n Age:" + s.getAge() + "\n DOB:" + s.getDob() + "\n Username:" + s.getUserName() + "\n\n";
+            studentString = studentString + temp;
+        }
+
+        //ModuleData
+        String moduleString = "";
+        for(ModuleData m: modules) {
+            String temp = m.getFullModuleName() + "\n Students:\n" + m.getStudents().toString() + "\n\n";
+            moduleString = moduleString + temp;
+        }
+
+        //CourseData
+        String courseString = "";
+        for(CourseData c : courses){
+            String temp = c.getCourseName() + "\n Start Date:" + c.getStartDate()
+                    + "\n End Date:" + c.getEndDate() + "\n Modules:" + c.getModules().toString() + "\n\n";
+            courseString = courseString + temp;
+        }
+
+        System.out.println("Students: \n" + studentString);
+        System.out.println("\n\nModules:\n" + moduleString);
+        System.out.println("\n\nCourses: \n" + courseString );
     }
 }
