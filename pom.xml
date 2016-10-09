@@ -55,8 +55,10 @@
         <dependency>
             <groupId>com.github.AndyMcB</groupId>
             <artifactId>uni.records</artifactId>
-            <version>31816f4</version>
+            <version>8b71e63</version>
         </dependency>
     </dependencies>
     
 </project>
+
+<!--31816f4-->
